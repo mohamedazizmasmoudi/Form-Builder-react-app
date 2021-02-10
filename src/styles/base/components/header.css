@@ -1,0 +1,43 @@
+.header {
+    background:#20222b;
+    color: white;
+    margin-bottom: 1.6rem;
+    padding: 1.6rem 0;
+}
+
+.header__title {
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+.header__subtitle{
+    color: #a5afd7;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+
+.link{
+    color: white;
+    font-family: "proxima nova";
+    font-weight: 100;
+    font-size: 56p;
+    text-align: center;
+    border: solid 2px white;
+    border-radius: 50px;
+    padding: 10px 80px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.container{
+    max-width:60rem;
+    margin: 0 auto;
+    padding: 0 1.6rem
+
+}
