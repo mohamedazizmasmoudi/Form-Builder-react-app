@@ -31,7 +31,11 @@ export default class FormSubmissionsPage extends React.Component {
                     <table>
                         <thead>
                             <tr>
-                                <th>#All-submissions</th>
+                            <th>name</th>
+                            <th>email</th>
+
+                                
+
                                 {this.state.newLine[0].formSubmissions[0].map((header, index) =>
                                     <th align="center" key={index}>
                                         {header.input}
@@ -41,16 +45,19 @@ export default class FormSubmissionsPage extends React.Component {
                         </thead>
                         <tbody>
                             {this.state.newLine.map((newline, index) =>
-                                newline.formSubmissions.map((line) =>
-                                    <tr key={index}>
-                                        <td align="center">{index + 1}</td>
+                            <tr>
+                                <td>{newline.user.name}</td>
+                                <td>{newline.user.email}</td>
+                             
+                                {newline.formSubmissions.map((line) =>
+                                    <td key={index}>
                                         {line.map((header, index) =>
-                                            <td align="center" key={index}>
+                                            <p align="center" key={index}>
                                                 {header.value}
-                                            </td>
+                                            </p>
                                         )}
-                                    </tr>
-                                )
+                                    </td>
+                                )}</tr>
                             )}
                         </tbody>
                     </table>

@@ -29,7 +29,6 @@ export default class FormsListPage extends React.Component {
                                 <th>Form ID</th>
                                 <th>Form Name</th>
                                 <th>#_Submissions</th>
-                                <th>Submit Page</th>
                                 <th>Submissions Page</th>
                                 <th>assign to page</th>
                             </tr>
@@ -41,8 +40,7 @@ export default class FormsListPage extends React.Component {
                                     <td align="center">{index + 1}</td>
                                     <td align="center">{form.name}</td>
                                     <td align="center">{form.counter}</td>
-                                    <td align="center"><Link to={{ pathname: `/FormSubmitPage/${index + 1}`, state: { name: form.name } }}>View</Link></td>
-                                    <td align="center"><Link to={"/FormSubmissionsPage/" + (index + 1)}>View</Link></td>
+                                    <td align="center"><Link to={"/FormSubmissionsPage/" + form._id}>View</Link></td>
                                     <td align="center"><Link to={"/allpagesnotsub/" + form._id}>assign to page</Link></td>
                                 </tr>)}
                         </tbody>

@@ -1,4 +1,5 @@
 import React from 'react';
+import {  isAuthenticated } from '../auth';
 const validator = require('validator');
 
 export default class FormSubmitPage extends React.Component {
@@ -25,7 +26,7 @@ export default class FormSubmitPage extends React.Component {
             }),
         }).then(res => res.json())
             .then(forms =>
-                this._isMounted ? this.setState({ forms }) : '');
+                this.setState({ forms }) );
     }
 
     componentWillMount() {
@@ -42,8 +43,8 @@ export default class FormSubmitPage extends React.Component {
             body: JSON.stringify({
                 counter: counter,
                 name: name
-
-            }),
+              
+                 }),
         })
     }
 
@@ -59,7 +60,7 @@ export default class FormSubmitPage extends React.Component {
         });
         let index = this.props.form.id;
         let formSubmissions = [oneForm];
-        let newLine = { index: index, formSubmissions: formSubmissions }
+        let newLine = { index: index, formSubmissions: formSubmissions,form: this.props.form, user:isAuthenticated().user,    }
 
         fetch(`${process.env.REACT_APP_API_URL}/customers/newDB`, {
             method: 'POST',
@@ -68,7 +69,8 @@ export default class FormSubmitPage extends React.Component {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(
-                newLine
+                newLine,
+           
             ),
         }).then(() => {
             const address = `/FormsListPage`;

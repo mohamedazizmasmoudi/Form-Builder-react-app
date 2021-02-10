@@ -60,7 +60,7 @@ console.log("data",data.form)
 
                 <p className="card-text">{post.body}</p>
                 <br />
-                {this.state.form && (<FormSubmitPage form={this.state.form} /> )}
+                {isAuthenticated().user && this.state.form && (<FormSubmitPage form={this.state.form} /> )}
  
                 <div className="d-inline-block">
                     <Link to={`/`} className="btn btn-raised btn-primary btn-sm mr-5">
@@ -93,7 +93,7 @@ console.log("data",data.form)
     };
 
     render() {
-        const { post, redirectToHome, redirectToSignin, comments } = this.state;
+        const { post, redirectToHome, redirectToSignin } = this.state;
 
         if (redirectToHome) {
             return <Redirect to={`/`} />;
