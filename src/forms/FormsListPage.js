@@ -22,7 +22,6 @@ export default class FormsListPage extends React.Component {
             this.state.forms.length > 0 ?
                 <div className="container">
                     <h2 className="header__title">Forms List category</h2>
-                    <h1></h1>
                     <table>
                         <thead>
                             <tr>

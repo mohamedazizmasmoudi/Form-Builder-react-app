@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { liste ,assign} from "./apiPost";
-import DefaultPost from "../images/mountains.jpg";
 import { Link } from "react-router-dom";
 
 class Posts extends Component {
@@ -51,13 +50,7 @@ class Posts extends Component {
         return (
             <div className="row">
                 {posts.map((post, i) => {
-                    const posterId = post.postedBy
-                        ? `/user/${post.postedBy._id}`
-                        : "";
-                    const posterName = post.postedBy
-                        ? post.postedBy.name
-                        : " Unknown";
-
+                
                     return (
                         <div className="card col-md-4" key={i}>
                             <div className="card-body">

@@ -57,7 +57,7 @@ class EditProfile extends Component {
       return false;
     }
     // email@domain.com
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    if (!/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/.test(email)) {
       this.setState({
         error: "A valid Email is required",
         loading: false

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { singlePost, update } from "./apiPost";
 import { isAuthenticated } from "../auth";
 import { Redirect } from "react-router-dom";
-import DefaultPost from "../images/mountains.jpg";
 
 class EditPost extends Component {
     constructor() {
@@ -103,7 +102,6 @@ class EditPost extends Component {
 
     render() {
         const {
-            id,
             title,
             body,
             redirectToProfile,

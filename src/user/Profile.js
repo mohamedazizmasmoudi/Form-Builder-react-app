@@ -4,7 +4,6 @@ import { Redirect, Link } from "react-router-dom";
 import { read } from "./apiUser";
 import DefaultProfile from "../images/avatar.jpg";
 import DeleteUser from "./DeleteUser";
-import { listByUser } from "../post/apiPost";
 
 class Profile extends Component {
   constructor() {

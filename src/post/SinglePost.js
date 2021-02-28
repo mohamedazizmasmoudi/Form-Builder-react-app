@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { singlePost , remove} from './apiPost';
-import DefaultPost from '../images/mountains.jpg';
 import { Link, Redirect } from 'react-router-dom';
 import { isAuthenticated } from '../auth';
 import FormSubmitPage from '../forms/FormSubmitPage';
@@ -51,7 +50,6 @@ console.log("data",data.form)
 
 
     renderPost = post => {
-        const posterId = post.postedBy ? `/user/${post.postedBy._id}` : '';
 
 
         return (

@@ -73,7 +73,6 @@ export default class FormSubmitPage extends React.Component {
            
             ),
         }).then(() => {
-            const address = `/FormsListPage`;
             
         })
     }
