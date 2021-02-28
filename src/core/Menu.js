@@ -26,14 +26,14 @@ const Menu = ({ history }) => (
 
             <li className="nav-item">
                 <Link className="nav-link" style={isActive(history, '/')} to="/FormBuilderPage">
-                    FormBuilderpage
+                    FormBuilder
                 </Link>
             </li>
              ) }
             {isAuthenticated() && isAuthenticated().user.role === 'admin' && (
             <li className="nav-item">
                 <Link to={`/post/create`} style={isActive(history, `/post/create`)} className="nav-link">
-                    Create Page
+                    Create category
                 </Link>
             </li>
   )}

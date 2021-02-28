@@ -79,7 +79,7 @@ class NewPost extends Component {
                 onClick={this.clickSubmit}
                 className="btn btn-raised btn-primary"
             >
-                Create Page
+                Create category
             </button>
         </form>
     );
@@ -100,7 +100,7 @@ class NewPost extends Component {
 
         return (
             <div className="container">
-                <h2 className="mt-5 mb-5">Create a new Page</h2>
+                <h2 className="mt-5 mb-5">Create a new category</h2>
                 <div
                     className="alert alert-danger"
                     style={{ display: error ? "" : "none" }}

@@ -78,7 +78,7 @@ class Posts extends Component {
         return (
             <div className="container">
                 <h2 className="mt-5 mb-5">
-                    {!posts.length ? "No more pages!" : "Pages"}
+                    {!posts.length ? "No more category!" : "category"}
                 </h2>
 
                 {this.renderPosts(posts)}

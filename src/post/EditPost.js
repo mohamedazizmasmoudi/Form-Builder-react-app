@@ -96,7 +96,7 @@ class EditPost extends Component {
                 onClick={this.clickSubmit}
                 className="btn btn-raised btn-primary"
             >
-                Update Page
+                Update category
             </button>
         </form>
     );

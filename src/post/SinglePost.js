@@ -64,7 +64,7 @@ console.log("data",data.form)
  
                 <div className="d-inline-block">
                     <Link to={`/`} className="btn btn-raised btn-primary btn-sm mr-5">
-                        Back to pages
+                        Back to category
                     </Link>
 
 
@@ -78,10 +78,10 @@ console.log("data",data.form)
                                         to={`/post/edit/${post._id}`}
                                         className="btn btn-raised btn-warning btn-sm mr-5"
                                     >
-                                        Update page
+                                        Update category
                                     </Link>
                                     <button onClick={this.deleteConfirmed} className="btn btn-raised btn-danger">
-                                        Delete Page
+                                        Delete category
                                     </button>
                                 </div>
                             </div>

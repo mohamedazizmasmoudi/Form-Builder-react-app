@@ -27,7 +27,7 @@ export default class FormSubmissionsPage extends React.Component {
         return (
             this.state.newLine.length > 0 ?
                 <div className="container">
-                    <h2>Form Submissions Page</h2>
+                    <h2>Form Submissions category</h2>
                     <table>
                         <thead>
                             <tr>

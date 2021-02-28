@@ -21,7 +21,7 @@ export default class FormsListPage extends React.Component {
         return (
             this.state.forms.length > 0 ?
                 <div className="container">
-                    <h2 className="header__title">Forms List Page</h2>
+                    <h2 className="header__title">Forms List category</h2>
                     <h1></h1>
                     <table>
                         <thead>
@@ -29,8 +29,10 @@ export default class FormsListPage extends React.Component {
                                 <th>Form ID</th>
                                 <th>Form Name</th>
                                 <th>#_Submissions</th>
-                                <th>Submissions Page</th>
-                                <th>assign to page</th>
+                                <th>Submissions category</th>
+                                <th>assign to category</th>
+                                <th>confirm demande</th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -41,7 +43,9 @@ export default class FormsListPage extends React.Component {
                                     <td align="center">{form.name}</td>
                                     <td align="center">{form.counter}</td>
                                     <td align="center"><Link to={"/FormSubmissionsPage/" + form._id}>View</Link></td>
-                                    <td align="center"><Link to={"/allpagesnotsub/" + form._id}>assign to page</Link></td>
+                                    <td align="center"><Link to={"/allpagesnotsub/" + form._id}>assign to category</Link></td>
+                                    <td align="center"><Link to={"/allpagesnotsub/" + form._id}>confirm demande</Link></td>
+
                                 </tr>)}
                         </tbody>
                     </table>

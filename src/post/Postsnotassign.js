@@ -79,7 +79,7 @@ class Posts extends Component {
                                 <button
                         className="btn btn-raised btn-warning mr-5 mt-5 mb-5"
                         onClick={() => this.assign(post._id)}
-                    >choisir cette page
+                    >choisir cette category
                     </button>
                             </div>
                         </div>
@@ -94,7 +94,7 @@ class Posts extends Component {
         return (
             <div className="container">
                 <h2 className="mt-5 mb-5">
-                    {!posts.length ? "No more pages!" : "Pages"}
+                    {!posts.length ? "No more category!" : "category"}
                 </h2>
 
                 {this.renderPosts(posts)}
