@@ -43,7 +43,7 @@ export default class FormsListPage extends React.Component {
                                     <td align="center">{form.counter}</td>
                                     <td align="center"><Link to={"/FormSubmissionsPage/" + form._id}>View</Link></td>
                                     <td align="center"><Link to={"/allpagesnotsub/" + form._id}>assign to category</Link></td>
-                                    <td align="center"><Link to={"/allpagesnotsub/" + form._id}>confirm demande</Link></td>
+                                    <td align="center"><Link to={"/"}>confirm demande</Link></td>
 
                                 </tr>)}
                         </tbody>
