@@ -8,7 +8,7 @@ const localhosturlsToCache = [
     '/',
   ];
   
-  const CACHE_NAME = 'war9a-VOTE-APP';
+  const CACHE_NAME = 'war9a-APP';
   
   const self = this;
   
